@@ -8,7 +8,7 @@ def backup():
 
 def main():
 
-    schedule.every(1).minute.do(backup)
+    schedule.every(1).hour.do(backup)
 
     while True:
         schedule.run_pending()
